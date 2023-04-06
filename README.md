@@ -7,3 +7,5 @@
 ### Lng and environment: JS
 
 ### To start open index.html with double click
+
+07.07.2022
