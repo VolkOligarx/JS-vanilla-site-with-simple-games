@@ -1,0 +1,183 @@
+@media (max-width: 1024px) {
+  .center {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+  .main {
+    background-position: -209px;
+    height: 735px;
+  }
+  .main_content {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main_content_span {
+    display: contents;
+  }
+  .main_title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    width: auto;
+  }
+  .main_text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    width: auto;
+    padding-bottom: 32px;
+  }
+  .playzone {
+    height: auto;
+  }
+  .playzone_image:nth-of-type(1) {
+    width: 343px;
+    margin-bottom: 0px;
+    margin-top: 128px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .playzone_image:nth-of-type(2) {
+    width: 343px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .playzone_image:nth-of-type(3) {
+    width: 343px;
+    margin-bottom: 128px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .game1 {
+    height: auto;
+  }
+  .game1_pngNote1 {
+    display: none;
+  }
+  .game1_pngNote2 {
+    display: none;
+  }
+  .game1_svgGamepad {
+    display: none;
+  }
+  .game1_svgHP {
+    display: none;
+  }
+  .game1_svgMan {
+    display: none;
+  }
+  .game1_svgGirl {
+    display: none;
+  }
+  .game1_phoneImage {
+    display: block;
+    width: 343px;
+  }
+  .game1_content {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    gap: 64px;
+    height: 653px;
+  }
+  .game1_content_visual {
+    height: auto;
+    width: auto;
+  }
+  .game1_content_visual_mainImage {
+    width: 344px;
+  }
+  .game1_content_h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .game1_content_text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .game1_content_textBlock {
+    width: 343px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .game2_content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .game3 {
+    height: 800px;
+    background-size: auto;
+    background-position: -425px;
+  }
+  .game3_content {
+    gap: 0px;
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 50px;
+  }
+}
+/*# sourceMappingURL=style_phone.css.map */

@@ -1,0 +1,331 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.center{
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+.main{
+
+    height: 1024px;
+    background-image: url(../images/back_main.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    &_content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 217px;
+    &_span{
+        font-weight: 700;
+        color: #FFFFFF;
+        text-decoration: none;
+        background:  no-repeat 0 100%;
+        background-image: linear-gradient(currentColor, currentColor);
+        background-size: 0% 2px;
+        transition: all .5s ease;
+    }
+    &_span:hover, &_span:focus{
+        background-size: 100% 2px;
+        color: #f11658;
+    }
+    }
+    &_title{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 78px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    width: 760px;
+    }
+    &_text{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    color: #FFFFFF;
+    padding-top: 32px;
+    padding-bottom: 44px;
+    width: 481px;
+    }
+    &_button{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    background: #9C0332;
+    border-radius: 30px;
+    padding: 13.3px 74px;
+    animation: focus-in-contract 0.9s ease-out;
+    transition: all 0.8s;
+    width: 234.06px;
+    height: 48.6px;
+    }
+    &_button:hover{
+        box-shadow: #000915;
+        background-color: red;
+        transform: scale(1.05);
+        color: #000915;
+    }
+@-webkit-keyframes focus-in-contract {
+    0% {
+      letter-spacing: 1em;
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes focus-in-contract {
+    0% {
+      letter-spacing: 1em;
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes HP {
+	0% {
+		transform: scale(1) rotate(0deg);
+    }
+    30% {
+        transform: scale(0.8) rotate(45deg);
+    }
+    100%{
+        transform: scale(0.25) rotate(45deg) translateX(675px) translateY(-980px);
+    }
+  }
+    @keyframes Gamepad {
+	0% {
+		transform: translateX(0px);
+    }
+    30% {
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(-123px);
+    }
+  }
+  @keyframes notehide {
+	0% {
+		opacity: 0;
+    }
+    99%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+  }
+
+  
+}
+.playzone{
+    background: #000915;
+    height: 556px;
+    &_game{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        gap: 32px;
+    }
+    &_image_text{
+        padding: 32px;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        color: #FFFFFF;
+    }
+    &_image:nth-of-type(1){
+        margin: 128px 0px;
+        background-image: url(../images/playzone_1.png);
+        width: 379px;
+        height: 300px;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column-reverse;
+        text-decoration: none;
+        transition: all 0.5s;
+    }
+    &_image:nth-of-type(2){
+        margin: 128px 0px;
+        background-image: url(../images/playzone_2.png);
+        width: 379px;
+        height: 300px;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column-reverse;
+        text-decoration: none;
+        transition: all 0.5s;
+    }
+    &_image:nth-of-type(3){
+        margin: 128px 0px;
+        background-image: url(../images/playzone_3.png);
+        width: 379px;
+        height: 300px;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column-reverse;
+        transition: all 0.5s;
+    }
+    &_image:hover{
+        border: 3px solid #44D2FF;
+        border-radius: 16px;
+        margin: 40px;
+    }
+}
+.game1{
+    display: flex;
+    height: 800px;
+    background: #000915;
+    &_pngNote1{
+        display: inline;
+        height: 29px;
+        width: 29px;
+        position: absolute;
+        padding-left: 455px;
+        padding-bottom: 231px;
+        animation: notehide 11s ease 0s 1 normal forwards;
+    }
+    &_pngNote2{
+        display: inline;
+        height: 29px;
+        width: 29px;
+        position: absolute;
+        padding-right: 362px;
+        padding-bottom: 215px;
+        transform: scale(-1,1);
+        animation: notehide 11s ease 0s 1 normal forwards;
+    }
+    &_svgGamepad{
+        z-index: 2;
+        position: absolute;
+        padding-left: 152px;
+        padding-right: 70px;
+        animation: Gamepad 3s ease 8s 1 normal forwards;
+    }
+    &_svgMan{
+        z-index: 1;
+        position: absolute;
+        padding-left: 347px;
+        padding-right: 27px;
+    }
+    &_svgGirl{
+        z-index: 4;
+        position: absolute;
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+    &_svgHP{
+        z-index: 3;
+        position: absolute;
+        padding-bottom: 100px;
+        padding-left: 18px;
+        animation: HP 3s ease 8s 1 normal forwards;
+    }
+    &_phoneImage{
+        display: none;
+    }
+    &_content{
+        display: flex;
+        gap: 135px;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        &_visual{
+            display: flex;
+            flex-direction: column-reverse;
+            width: 480px;
+            height: 333px;
+        }
+        &_textBlock{
+            width: 584px;
+        }
+        &_h1{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 59px;
+            display: flex;
+            align-items: center;
+            color: #FFFFFF;
+            padding-bottom: 32px;
+        }
+        &_text{
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 32px;
+            display: flex;
+            align-items: center;
+            color: #FFFFFF;
+            padding-bottom: 32px;
+            opacity: 0.8;
+        }
+    }
+}
+.game3{
+    height: 800px;
+    background: none;
+    background-image: url(../images/background_game3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    &_content{
+        &_textBlock{
+            width: auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;    
+        }
+        &_h1{
+            text-align: center;
+        }
+        &_text{
+            text-align: center;
+        }
+    }
+}
+.footer{
+    border-top: 1px solid rgba(184, 212, 255, 0.2);
+    background: #000915;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &_text{
+        color: #FFFFFF;
+        text-align: center;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        display: flex;
+        justify-content: center;
+    }
+}
+@import 'style_phone';
